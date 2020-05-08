@@ -1,0 +1,224 @@
+/* Team MOR component design stylesheet */
+/* Marissa Carter, Oleg Zadoyanchuk, Rhys Boyar */
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: grey;
+}
+
+/*Main container*/
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 8px;
+}
+
+/*All grid items*/
+.grid-item{
+  background-color: white;
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+/*First grid item | Color palette*/
+#color-palette{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 8px;
+}
+
+#color-palette #primary-bgcolor{
+  background-color: white; /*primary background colour */
+  padding: 16px;
+  border: dotted black;
+  border-width: thin;
+}
+
+#color-palette #secondary-bgcolor{
+  background-color: #3d61ff; /*secondary background colour */
+  padding: 16px;
+  color: white;
+}
+
+#color-palette #navbar-color{
+  background-color: #6b6b75; /*navbar colour */
+  padding: 16px;
+  color: white;
+}
+
+#color-palette #supplementary-color{
+  background-color: #b31e14; /*supplementary colour */
+  padding: 16px;
+  color: white;
+}
+
+/*second grid item | Headings*/
+h1{
+  font-size: 60px;
+  font-family: sans-serif;
+  color: #A0CFEB;
+  text-align: center;
+}
+
+h2{
+  font-size: 30px;
+  font-weight: bold;
+  color: #A71930;
+  font-family: sans-serif;
+}
+
+h3{
+  color: #EFBD47;
+  font-size: 22px;
+  font-family: sans-serif;
+}
+
+/*third grid item | Paragraphs*/
+/* paragraph font */
+p {
+	font-family: Perpetua, serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+/*fourth grid item | Fonts*/
+#fonts{
+  font-family: Perpetua, serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/*fifth grid item | Buttons*/
+#buttons .btn-menu{
+  box-sizing: border-box;
+	padding: 8px 8px;
+	font-size: 26px;
+  border: solid #6b6b75; /*navbar color */
+	text-decoration: none;
+	margin: auto;
+	background-color: #6b6b75; /*navbar color */
+  color: white;
+	border-radius: 5px;
+}
+
+#buttons .btn-menu:hover{
+  box-sizing: border-box;
+	padding: 8px 8px;
+	font-size: 26px;
+  border: solid white; /*primary background color */
+	text-decoration: none;
+	margin: auto;
+	background-color: white;
+  color: #6b6b75; /*navbar color */
+  transition: smooth, 200ms;
+  cursor: pointer;
+}
+
+#buttons .btn-primary{
+  box-sizing: border-box;
+	padding: 8px 8px;
+	font-size: 26px;
+  border: solid #b31e14; /*supplementary color */
+	text-decoration: none;
+	margin: auto;
+	background-color: #b31e14; /*supplementary color */
+  color: white;
+	border-radius: 5px;
+}
+
+#buttons .btn-primary:hover{
+  box-sizing: border-box;
+	padding: 8px 8px;
+	font-size: 26px;
+  border: solid white; /*primary background color */
+	text-decoration: none;
+	margin: auto;
+	background-color: white;
+  color: #6b6b75; /*navbar color */
+  transition: smooth, 200ms;
+  cursor: pointer;
+}
+
+#buttons .btn-secondary{
+  box-sizing: border-box;
+	padding: 8px 8px;
+	font-size: 26px;
+  border: solid #6b6b75; /*navbar color */
+	text-decoration: none;
+	margin: auto;
+	background-color: white; /*primary background color */
+  color: #6b6b75; /*navbar color */
+	border-radius: 5px;
+}
+
+#buttons .btn-secondary:hover{
+  box-sizing: border-box;
+	padding: 8px 8px;
+	font-size: 26px;
+  border: solid #6b6b75; /*navbar color */
+	text-decoration: none;
+	margin: auto;
+	background-color: #6b6b75; /*navbar color */
+  color: white; /*primary background color */
+  transition: smooth, 200ms;
+  cursor: pointer;
+}
+
+#buttons .btn-link{
+  box-sizing: border-box;
+	padding: 8px 8px;
+	font-size: 16px;
+  border: none;
+  font-weight: bold;
+	margin: auto;
+  background-color: white; /*primary background color */
+  color: #b31e14; /*supplementary color */
+}
+
+#buttons .btn-link:hover{
+  box-sizing: border-box;
+	padding: 8px 8px;
+	font-size: 16px;
+  border: none;
+	text-decoration: underline;
+	margin: auto;
+	background-color: white;
+  color: #6b6b75; /*navbar color */
+  transition: smooth, 200ms;
+  cursor: pointer;
+}
+
+/*sixth grid item | UX input*/
+input {
+	width: 100%;
+	box-sizing: border-box;
+	border: solid #6b6b75; /*navbar color */
+  border-width: thin;
+	border-radius: 4px;
+	padding: 12px 20px;
+	margin: 8px 0;
+}
+/*input field selected */
+input:focus {
+  background-color: #ffece3
+}
+
+/*select fields*/
+select {
+	background-color: white;
+  width: 100%;
+	box-sizing: border-box;
+  border: solid #6b6b75; /*navbar color */
+  border-width: thin;
+  border-radius: 4px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	cursor: pointer;
+}
