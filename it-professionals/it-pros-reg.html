@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>IT Code Fair | Company Registration</title>
+    <meta name="description" content="It code fair company registration page">
+    <link rel="stylesheet" href="../css/global-styles.css">
+    <!-- icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header class="landing-header-pros-reg">
+      <div class="header-content">
+        <h1><a href="../index.html">IT Code Fair|2020</a></h1>
+        <span>innovate&nbsp;|&nbsp;integrate&nbsp;|&nbsp;inspire</span>
+        <h2 class="student-reg-title">Company Registration</h2>
+      </div>
+    </header>
+    <div class="pros-forms-bg">
+      <div class="pros-forms">
+        <form class="initial-pros-form" action="#sponsor-form" method="get">
+          <fieldset>
+            <legend id="pros-form-intro">Let us know how Code Fair 2020 can best accomodate your business</legend>
+            <input type="text" placeholder="Company Name" name="company-name" maxlength="50" required>
+            <input type="url" placeholder="Website" name="company-website">
+          </fieldset>
+          <fieldset>
+            <legend>Our company is interested in hiring...(select as many as required)</legend>
+            <div class="selectors" id="company-form-selectors">
+              <div class="job-prospects" id="col-1">
+                <label class="checkbox-lbl" for="computer-scientists">
+                  <input id="computer-scientists" type="checkbox" name="computer-scientists" value="computer-scientists">
+                  <span class="custom-checkbox">Computer Scientists</span>
+                </label>
+                <label class="checkbox-lbl" for="cyber-security-developers">
+                  <input id="cyber-security-developers" type="checkbox" name="cyber-security-developers" value="cyber-security-developers">
+                  <span class="custom-checkbox">Cyber Security Developers</span>
+                </label>
+                <label class="checkbox-lbl" for="database-developers">
+                  <input id="database-developers" type="checkbox" name="database-developers" value="database-developers">
+                  <span class="custom-checkbox">Database Developers</span>
+                </label>
+                <label class="checkbox-lbl" for="graphic-designers">
+                  <input id="graphic-designers" type="checkbox" name="graphic-designers" value="graphic-designers">
+                  <span class="custom-checkbox">Graphic Designers</span>
+                </label>
+              </div>
+              <div class="job-prospects" id="col-2">
+                <label class="checkbox-lbl" for="mobile-app-developers">
+                  <input id="mobile-app-developers" type="checkbox" name="mobile-app-developers" value="mobile-app-developers">
+                  <span class="custom-checkbox">Mobile App Developers</span>
+                </label>
+                <label class="checkbox-lbl" for="network-engineers">
+                  <input id="network-engineers" type="checkbox" name="network-engineers" value="network-engineers">
+                  <span class="custom-checkbox">Network Engineers</span>
+                </label>
+                <label class="checkbox-lbl" for="software-engineers">
+                  <input id="software-engineers" type="checkbox" name="software-engineers" value="software-engineers">
+                  <span class="custom-checkbox">Software Engineers</span>
+                </label>
+                <label class="checkbox-lbl" for="web-developers">
+                  <input id="web-developers" type="checkbox" name="web-developers" value="web-developers">
+                  <span class="custom-checkbox">Web Developers</span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>We would like to participate in...</legend>
+            <label class="checkbox-lbl" for="employer-speed-dating">
+              <input id="employer-speed-dating" type="checkbox" name="employer-speed-dating" value="employer-speed-dating">
+              <span class="custom-checkbox">Employer Speed Dating</span>
+            </label>
+            <label class="checkbox-lbl" for="judge-at-the-codefair">
+              <input id="judge-at-the-codefair" type="checkbox" name="judge-at-the-codefair" value="judge-at-the-codefair">
+              <span class="custom-checkbox">Judge at the Code Fair</span>
+            </label>
+            <label class="checkbox-lbl" for="sponsor-a-prize">
+              <input id="sponsor-a-prize" type="checkbox" name="sponsor-a-prize" value="sponsor-a-prize">
+              <span class="custom-checkbox">Sponsor a Prize</span>
+            </label>
+            <button class="continue-btn" type="submit" name="continue">Continue</button>
+          </fieldset>
+        </form>
+        <form class="sponsor-registration-form" id="sponsor-form" action="../successful-registration.html" method="get" autocomplete="off">
+          <fieldset>
+            <legend>Company representative details</legend>
+            <input type="text" placeholder="Full Name" name="rep-name" required>
+            <input type="text" placeholder="Position" name="rep-position" required>
+            <input type="tel" placeholder="Mobile Number" name="rep-mobile-number" pattern="[0-9]{4}[0-9]{3}[0-9]{3}" required>
+            <input type="tel" placeholder="Office Number" name="rep-office-number" pattern="[0-9]{4}[0-9]{4}">
+            <input type="email" placeholder="Email" name="rep-email" required>
+          </fieldset>
+          <fieldset>
+            <legend>Please select a sponsorship tier</legend>
+            <select class="selectors" id="rep-form-selectors" name="sponsorship-tier">
+              <option value="bronze">Bronze | $50 - $300</option>
+              <option value="silver">Silver | $300 - $1,000</option>
+              <option value="gold">Gold | $1,000 - $5,000</option>
+              <option value="platinum">Platinum | $5,000 - $10,000</option>
+            </select>
+          </fieldset>
+          <button class="finished-form-btn" type="submit" name="register">Register</button>
+        </form>
+      </div>
+    </div>
+    <div class="home-btn">
+      <button class="home-btn" type="button" name="home-button" onclick="location.href='../index.html';" value="Return to IT Code Fair home page"><i class="fa fa-home"></i></button>
+    </div>
+    <footer>
+      <p class="copyright">&copy; <a href="https://www.cdu.edu.au/" target="_blank" rel="noopener noreferrer">CDU</a> IT Code Fair 2020 | Page "Student Registration" developed for unit HIT226 by Team MOR<p>
+      <p class = "attributions">Banner image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2682712">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2682712">Pixabay</a>
+      </p>
+    </footer>
+  </body>
+</html>

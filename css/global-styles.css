@@ -1,0 +1,894 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Perpetua, serif;
+  font-size: 1rem;
+  color: black;
+/* fluid font-size mathamatic formula adapted from https://www.madebymike.com.au/writing/fluid-type-calc-examples/ */
+  line-height: calc(1.5 + (3 - 1.5) * ((100vw - 300px)/(2560 - 300)));
+}
+
+/* HEADERS */
+/* --------------------------------------HOME PAGE------------------------------------------------- */
+/* home header */
+.landing-header-home {
+  height: 100vh;
+  background-image: url('../media/images/background-3.jpg');
+  background-color: #5c5c5c;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 3px black;
+}
+
+/* ALL HEADERS */
+.header-content {
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: white;
+}
+
+.header-content h1 {
+  font-size: 9.5vw;
+}
+
+.header-content h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-content span {
+  font-size: calc(1.375rem + (80 - 21) * ((100vw - 300px) / (2560 - 300)));
+}
+
+.header-content h2 {
+  color: #ff5500;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  font-size: calc(1.625rem + (80 - 26) * ((100vw - 300px) / (2560 - 300)));
+}
+
+/* cards area */
+
+.user-portals {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10rem;
+  padding: 1rem;
+}
+
+@media (max-width:768px){
+  .user-portals{
+    flex-direction: column;
+  }
+}
+
+/* students card */
+.students-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 46%;
+  height: calc(26.25rem + (840 - 420) * ((100vw - 300px) / (2560 - 300)));
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 10px #6b6b75;
+}
+
+.students-card:hover {
+  background-color: #ededed;
+}
+
+@media (max-width:768px){
+  .students-card {
+    width: 80vw;
+  }
+}
+
+.students-card h2 {
+  padding: 0.5rem;
+  font-size: calc(1.625rem + (80 - 26) * ((100vw - 300px) / (2560 - 300)));
+  color: #3d61ff;
+  text-align: center;
+}
+
+.students-card-media img {
+  padding: 0;
+  width: 100%;
+  height: calc(12.5rem + (500 - 200) * ((100vw - 300px) / (2560 - 300)));
+  object-fit: cover;
+}
+
+.students-card-text{
+  font-size: calc(1.2rem + (38.4 - 19.2) * ((100vw - 300px) / (2560 - 300)));
+  padding: 1rem;
+  font-family: Perpetua, serif;
+  text-align: center;
+}
+
+.students-card button {
+  width: calc(6.25rem + (200 - 100) * ((100vw - 300px) / (2560 - 300)));
+  height: calc(3.125rem + (100 - 60) * ((100vw - 300px) / (2560 - 300)));
+  padding: 0.5rem 0.5rem;
+  font-size: calc(1.625rem + (52 - 26) * ((100vw - 300px) / (2560 - 300)));
+  border: thin solid #b31e14;
+  text-decoration: none;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  background-color: #b31e14;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.students-card button:hover {
+  border: thin solid #6b6b75;
+  text-decoration: none;
+  background-color: white;
+  color: #6b6b75;
+  transition: smooth, 200ms;
+  cursor: pointer;
+}
+
+/* professionals card */
+.professionals-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 46%;
+  height: calc(26.25rem + (840 - 420) * ((100vw - 300px) / (2560 - 300)));
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 10px #6b6b75;
+}
+
+.professionals-card:hover {
+  background-color: #ededed;
+}
+
+@media (max-width:768px){
+  .professionals-card {
+    width: 80vw;
+  }
+}
+
+.professionals-card h2 {
+  padding: 0.5rem;
+  font-size: calc(1.625rem + (80 - 26) * ((100vw - 300px) / (2560 - 300)));
+  color: #3d61ff;
+  text-align: center;
+}
+
+.professionals-card-media img {
+  padding: 0;
+  width: 100%;
+  height: calc(12.5rem + (500 - 200) * ((100vw - 300px) / (2560 - 300)));
+  object-fit: cover;
+}
+
+.professionals-card-text{
+  font-size: calc(1.2rem + (38.4 - 19.2) * ((100vw - 300px) / (2560 - 300)));
+  padding: 1rem;
+  font-family: Perpetua, serif;
+  text-align: center;
+}
+
+.professionals-card button {
+  width: calc(6.25rem + (200 - 100) * ((100vw - 300px) / (2560 - 300)));
+  height: calc(3.125rem + (100 - 60) * ((100vw - 300px) / (2560 - 300)));
+  padding: 0.5rem 0.5rem;
+  font-size: calc(1.625rem + (52 - 26) * ((100vw - 300px) / (2560 - 300)));
+  border: thin solid #b31e14;
+  text-decoration: none;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  background-color: #b31e14;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.professionals-card button:hover {
+  border: thin solid #6b6b75;
+  text-decoration: none;
+  background-color: white;
+  color: #6b6b75;
+  transition: smooth, 200ms;
+  cursor: pointer;
+}
+
+/* home button */
+.home-btn {
+  width: calc(4rem + (128 - 64) * ((100vw - 300px) / (2560 - 300)));
+  height: calc(4rem + (128 - 64) * ((100vw - 300px) / (2560 - 300)));
+  position: fixed;
+  left: 6%;
+  top: 10%;
+  background: #EFBD47;
+  display: flex;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  font-size: calc(3.5rem + (112 - 56) * ((100vw - 300px) / (2560 - 300)));
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 3px #333;
+  opacity: 92%;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.home-btn:hover {
+  background: #87160f;
+}
+
+.home-btn:active {
+  color: #87160f;
+  background-color: white;
+  opacity: 92%;
+}
+
+/*------------------------------------------------STUDENT REGISTRATION PAGE------------------------------------------------*/
+/* student registration header */
+.landing-header-student-reg {
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 3px black;
+  padding-top: 2rem;
+  background: url('../media/images/background-1.jpg'); /*Image by <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=692186">Free-Photos</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=692186">Pixabay</a> */
+  background-size: cover;
+  background-position: center;
+}
+
+.student-forms-bg {
+  height: 100vh;
+  background-color: black;
+  background-size: cover;
+  display: block;
+  padding-top: 2rem;
+}
+
+.student-forms {
+  height: auto;
+  padding-bottom: 4rem;
+  margin-top: auto;
+  border-radius: 0.5rem;
+  width: calc(18.75rem + (600 - 300) * ((100vw - 300px) / (2560 - 300)));
+  background-color: rgba(204, 204, 204, 15%);
+  margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.initial-student-form {
+	width: 90%;
+  margin: auto;
+  padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.initial-student-form legend {
+	width: auto;
+	color: white;
+	font-size: calc(1.1rem + (35.2 - 17.6) * ((100vw - 300px) / (2560 - 300)));
+	display: block;
+	text-align: center;
+}
+
+.initial-student-form input {
+	width: 100%;
+	border:none;
+	border-radius: 0.25rem;
+	padding: 0.75rem 1.25rem;
+	margin: 0.5rem 0;
+}
+
+.initial-student-form input:hover {
+  background-color: #ededed;
+}
+
+.initial-student-form button {
+  width: calc(6rem + (192 - 96) * ((100vw - 300px) / (2560 - 300)));
+  height: calc(2rem + (64 - 32) * ((100vw - 300px) / (2560 - 300)));
+  font-size: calc(1rem + (32 - 16) * ((100vw - 300px) / (2560 - 300)));
+  border: solid #ff5500;
+  text-decoration: none;
+  background-color: #ff5500;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+}
+
+.initial-student-form button:hover {
+  border: solid #87160f;
+  text-decoration: none;
+  background-color: #87160f;
+  color: white;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+
+/* styling for main form */
+/* form closed */
+.student-registration-form {
+	width: 90%;
+	margin: auto;
+	height: 0;
+  align-items: center;
+	overflow: hidden;
+}
+
+/* form revealed */
+.student-registration-form:target {
+	width: 90%;
+  margin: auto;
+	height: 100%;
+  align-items: center;
+}
+
+.student-registration-form input {
+  width: 100%;
+  border:none;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.student-registration-form input:hover {
+  background-color: #ededed;
+}
+
+.student-registration-form legend {
+  width: auto;
+	color: #ff5500;
+	font-size: 1.6rem;
+  font-weight: bold;
+	display: block;
+	text-align: center;
+}
+
+.finished-form-btn {
+  width: calc(6rem + (192 - 96) * ((100vw - 300px) / (2560 - 300)));
+  height: calc(2rem + (64 - 32) * ((100vw - 300px) / (2560 - 300)));
+  font-size: calc(1rem + (32 - 16) * ((100vw - 300px) / (2560 - 300)));
+  border: solid #ff5500;
+  text-decoration: none;
+  background-color: #ff5500;
+  color: white;
+  border-radius: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.25rem;
+}
+
+.finished-form-btn:hover{
+  border: #87160f;
+  text-decoration: none;
+  background-color: #87160f;
+  color: white;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+
+
+/*-----------------------------------------------Student & Sponsor Information Styles---------------------------------------------------------*/
+.info-footer {
+  background-color: #5c5c5c;
+  height: 100px;
+  background-size: cover;
+}
+
+.info-header{
+  height: 100px;
+  display:flex;
+  justify-content: center;
+  background-color: #5c5c5c;
+  background-size: cover;
+}
+
+.info-button{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background-size:cover;
+}
+
+#buttons .info-button{
+  box-sizing: border-box;
+	padding: 8px 8px;
+	font-size: 26px;
+  border: solid #b31e14;
+	text-decoration: none;
+	background-color: #b31e14;
+  color: white;
+  border: thin solid #b31e14;
+	border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 10px;
+}
+
+#buttons .info-button:hover{
+  box-sizing: border-box;
+	padding: 8px 8px;
+	font-size: 26px;
+  border: thin solid #6b6b75;
+	text-decoration: none;
+	margin: auto;
+	background-color: white;
+  color: #6b6b75;
+  transition: smooth, 200ms;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.info-header h1{
+  font-size: 60px;
+  font-family: sans-serif;
+  color: #A0CFEB;
+  text-align: center;
+}
+
+.boxed{
+  border: 1px solid black;
+  width:98%;
+  height: 99%;
+  padding-top: 1rem;
+  border-radius: 5px;
+  box-shadow:2px 2px 20px black;
+  margin: 10px 10px 10px 10px;
+  background-color: white;
+  top: 30px;
+  align-items: center;
+  display:flex;
+  flex-direction: column;
+  }
+
+
+  .boxed li {
+    font-family: Perpetua, serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 20px 8px 8px 10px;
+    text-align: left;
+    align-content: center;
+    justify-content: center;
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  .boxed ul {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    list-style-type: none;
+  }
+
+  .boxed h1{
+    font-family: Perpetua, serif;
+    color:#3d61ff;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bolder;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-left: 330px;
+    padding-right: 330px;
+  }
+
+.boxed h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #3d61ff;
+  font-family: sans-serif;
+  padding-bottom: 15px;
+  text-align: center;
+  }
+
+.boxed-span {
+    color: #EFBD47;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align:right;
+}
+
+.info-content{
+  background-color: white;
+  background-size: auto;
+  background-position: center;
+  padding: 16px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height:100%;
+}
+
+.itprof-information-body {
+  background-color: black;
+  background-size: auto;
+  background-position: center;
+  padding-bottom: 4rem;
+}
+
+.landing-header-itprof-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-shadow: 2px 2px 3px black;
+  padding-top: 2rem;
+}
+
+  .student-information-body {
+    background-color: black;
+  	background-size: auto;
+    background-position: center;
+    padding-bottom: 4rem;
+  }
+
+  .landing-header-student-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 2px 2px 3px black;
+    padding-top: 2rem;
+  }
+
+  .gold {
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align:center;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: gold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 0px;
+    width:250px;
+    display:inline-block;
+    }
+
+  .silver {
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align:center;
+    border: 1px solid black;
+    background-color: silver;
+    border-radius: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 0px;
+    width:250px;
+    display:inline-block;
+  }
+
+  .bronze {
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align:center;
+    border: 1px solid black;
+    background-color: #cd7f32;
+    border-radius: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width:250px;
+    display:inline-block;
+  }
+
+  .platinum {
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align:center;
+    border: 1px solid black;
+    background-color: #e5e4e2;
+    border-radius: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width:250px;
+    display:inline-block;
+  }
+
+  /*------------------------------------------------PROFESSIONALS REGISTRATION PAGE------------------------------------------------*/
+
+/* company registration header */
+.landing-header-pros-reg {
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 3px black;
+  padding-top: 2rem;
+  background: url('../media/images/background-5.jpg');
+  background-position: center;
+}
+
+.pros-forms-bg {
+  height: 100%;
+  background-color: black;
+  background-size: cover;
+  display: block;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pros-forms {
+  height: auto;
+  padding-top: 1rem;
+  border-radius: 0.5rem;
+  width: calc(18.75rem + (600 - 300) * ((100vw - 300px) / (2560 - 300)));
+  background-color: rgba(204, 204, 204, 15%);
+  margin: auto;
+  padding-bottom: 1.5rem;
+}
+
+.initial-pros-form {
+  width: 90%;
+  margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#pros-form-intro {
+  padding-bottom: 1rem;
+  width: auto;
+  color: white;
+  font-size: calc(1.1rem + (35.2 - 17.6) * ((100vw - 300px) / (2560 - 300)));
+  display: block;
+  text-align: center;
+}
+
+.initial-pros-form legend {
+  width: auto;
+  color: #ff5500;
+  font-size: calc(1.1rem + (35.2 - 17.6) * ((100vw - 300px) / (2560 - 300)));
+  display: block;
+  text-align: center;
+}
+
+.initial-pros-form input {
+  width: 100%;
+  border:none;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.initial-pros-form input:hover {
+  background-color: #ededed;
+}
+
+.initial-pros-form button {
+  width: calc(6rem + (192 - 96) * ((100vw - 300px) / (2560 - 300)));
+  height: calc(2rem + (64 - 32) * ((100vw - 300px) / (2560 - 300)));
+  font-size: calc(1rem + (32 - 16) * ((100vw - 300px) / (2560 - 300)));
+  border: solid #ff5500;
+  text-decoration: none;
+  background-color: #ff5500;
+  color: white;
+  border-radius: 5px;
+  padding: 0.25rem;
+}
+
+.initial-pros-form button:hover {
+  border: solid #87160f;
+  text-decoration: none;
+  background-color: #87160f;
+  color: white;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+
+/* styling for rep form */
+/* form closed */
+.sponsor-registration-form {
+  width: 90%;
+  margin: auto;
+  height: 0;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* rep form revealed */
+.sponsor-registration-form:target {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.sponsor-registration-form input {
+  width: 100%;
+  border:none;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.sponsor-registration-form input:hover {
+  background-color: #ededed;
+}
+
+.sponsor-registration-form legend {
+  width: auto;
+  color: #ff5500;
+  font-size: calc(1.1rem + (35.2 - 17.6) * ((100vw - 300px) / (2560 - 300)));
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+
+.sponsor-registration-form select {
+  width: 100%;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.sponsor-form-btn {
+  width: calc(6rem + (192 - 96) * ((100vw - 300px) / (2560 - 300)));
+  height: calc(2rem + (64 - 32) * ((100vw - 300px) / (2560 - 300)));
+  font-size: calc(1rem + (32 - 16) * ((100vw - 300px) / (2560 - 300)));
+  border: solid #ff5500;
+  text-decoration: none;
+  background-color: #ff5500;
+  color: white;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.25rem;
+}
+
+.sponsor-form-btn:hover{
+  border: #87160f;
+  text-decoration: none;
+  background-color: #87160f;
+  color: white;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+/* ----------------------------------------------------------------SUCCESSFUL REGISTRATION PAGE------------------------------------------------------------------ */
+
+.landing-header-successful-reg {
+  height: 100vh;
+  background-image: url('../media/images/background-2.jpg');
+  background-color: #5c5c5c;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: color-burn;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 3px black;
+  box-shadow: 2px 2px 3px #333;
+}
+
+.header-content h3 {
+  color: white;
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: calc(1.25rem + (40 - 20) * ((100vw - 300px) / (2560 - 300)));
+}
+
+  /* --------------------------------------------------------------------------ALL FORMS------------------------------------------------------------------------------ */
+  /* selectors */
+  .checkbox-lbl {
+    align-items: center;
+    display: flex;
+    position: relative;
+    border-radius: 0.25rem;
+    color: #333;
+    width: 100%;
+    margin: 0.5rem 0;
+    /* padding: 0.75rem 1rem; */
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  .checkbox-lbl:hover {
+    background-color: #ff5500;
+    color: white;
+  }
+
+  .checkbox-lbl input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    margin: auto;
+
+  }
+
+  .checkbox-lbl input:checked ~ .custom-checkbox{
+    background-color: #ff5500
+  }
+
+  .custom-checkbox {
+    border-radius: 0.25rem;
+    margin: auto;
+    width: 100%;
+    padding: 0.3rem 0.6rem;
+  }
+
+  /* input field selected */
+  input:focus {
+    background-color: #defffb;
+  }
+
+  /* global styling for <fieldset> tags */
+  fieldset {
+  	border: none;
+  	font-size: 20px;
+  	font-weight: lighter;
+  }
+
+  /* footer */
+  footer {
+    display: block;
+    height: calc(5% + (96 - 48) * ((100vw - 300px) / (2560 - 300)));
+    background-color: #6b6b75;
+    font-size: calc(0.5rem + (32 - 8) * ((100vw - 300px) / (2560 - 300)));
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+
+  footer a:hover {
+    color: #b31e14;
+  }
